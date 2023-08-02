@@ -28,7 +28,7 @@ static inline void trim(string &s) {
     ltrim(s);
 }
 
-// split
+// split 분리, 자르기
 vector<string> split(string input, char del) {
     stringstream ss(input);
     string buffer;
