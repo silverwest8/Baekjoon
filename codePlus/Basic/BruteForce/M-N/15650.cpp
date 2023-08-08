@@ -46,12 +46,6 @@ int main(int argc, char* argv[]) {
     return 0;
 }
 
-int main(int argc, char* argv[]) {
-    std::cin >> N >> M;
-    dfs(1, 0);
-    return 0;
-}
-
 /*
 void dfs(int depth) {
     if (depth == M) {

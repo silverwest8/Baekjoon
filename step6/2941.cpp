@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
         if (S.size() >= 3) {
             string s3 = S.substr(0, 3);
             string s2 = S.substr(0, 2);
-            // 앞에 2글자가 list 안에 있으면
+            // 앞에 2글자가 list 안에 포함되어 있으면
             // vector find
             if (find(list.begin(), list.end(), s3) != list.end()) {
                 S = S.substr(3);
