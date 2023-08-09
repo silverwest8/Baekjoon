@@ -19,7 +19,7 @@ int main(int argc, char* argv[]) {
     
     for (i = 0; i < w.size(); i++) {
         // c++에서는 이진 탐색으로 원소를 탐색하는 lower_bound, upper_bound
-        // 정렬되어있어야 하고, value보다 작지 않은 첫번째 원소 return, 없으면 last return
+        // 정렬되어있어야 하고, value보다 작지 않은(크거나 같은) 첫번째 원소 return, 없으면 last return
         std::cout << std::lower_bound(v.begin(), v.end(), w[i])-v.begin() << " ";
     }
 
