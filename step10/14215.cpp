@@ -17,22 +17,23 @@ int main(int argc, char* argv[]) {
     return 0;
 }
 
-// int main(int argc, char* argv[]) {
-//     int a, b, c;
-//     cin >> a >> b >> c;
-//     if (a >= b + c || b >= a + c || c >= a + b ) {
-//         if (a >= b + c) {
-//             cout << a+b+c - (a-(b + c)+1);
-//         }
-//         if (b >= a + c) {
-//             cout << a+b+c - (b-(a + c)+1);
-//         }
-//         if (c >= a + b) {
-//             cout << a+b+c - (c-(a + b)+1);
-//         }
-//     } else {
-//         cout << a+b+c;
-//     }
-
-//     return 0;
-// }
+/*
+int main(int argc, char* argv[]) {
+    int a, b, c;
+    cin >> a >> b >> c;
+    if (a >= b + c || b >= a + c || c >= a + b ) {
+        if (a >= b + c) {
+            cout << a+b+c - (a-(b + c)+1);
+        }
+        if (b >= a + c) {
+            cout << a+b+c - (b-(a + c)+1);
+        }
+        if (c >= a + b) {
+            cout << a+b+c - (c-(a + b)+1);
+        }
+    } else {
+        cout << a+b+c;
+    }
+    return 0;
+}
+*/

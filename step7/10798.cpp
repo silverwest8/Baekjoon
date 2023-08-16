@@ -22,16 +22,18 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    // for (int j = 0; j < words.size(); j++) {
-    //     for (int i = 0; i < 5; i++) {
-    //         if (words[j][i] == 0) {
-    //             cout << ' ' << ' ';
-    //         } else {
-    //             cout << words[j][i] << ' ';
-    //         }
-    //     }
-    //     cout << "\n";
-    // }
+/*
+    for (int j = 0; j < words.size(); j++) {
+        for (int i = 0; i < 5; i++) {
+            if (words[j][i] == 0) {
+                cout << ' ' << ' ';
+            } else {
+                cout << words[j][i] << ' ';
+            }
+        }
+        cout << "\n";
+    }
+*/
 
     for (int j = 0; j < words.size(); j++) {
         for (int i = 0; i < 5; i++) {

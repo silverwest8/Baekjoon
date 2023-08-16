@@ -7,13 +7,15 @@ std::vector<std::vector<int>> v(MAX, std::vector<int>(MAX));
 // std::vector<std::vector<int>> v2(MAX, std::vector<int>(MAX));
 
 // 시간초과남
-// void copyArr(std::vector<std::vector<int>> &a, std::vector<std::vector<int>> &b) {
-//     for (int i = 0; i < N; i++) {
-//         for (int j = 0; j < M; j++) {
-//             b[i][j] = a[i][j];
-//         }
-//     }
-// }
+/*
+void copyArr(std::vector<std::vector<int>> &a, std::vector<std::vector<int>> &b) {
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < M; j++) {
+            b[i][j] = a[i][j];
+        }
+    }
+}
+*/
 
 void printArr(int N, int M) {
     for (int i = 0; i < N; i++) {
@@ -63,21 +65,23 @@ void rotate(int k, int num) {
             v[i][M-k-1] = v[i+1][M-k-1];
         }
         v[N-k-2][M-k-1] = save4;
-        // std::copy(v2.begin(), v2.end(), v.begin());
-        // copyArr(v2, v);
-        // --- //
-        // for (int j = k; j < M-k; j++) { // <-
-        //     v[k][j] = v2[k][j];
-        // }
-        // for (int i = k; i < N-k; i++) {
-        //     v[i][k] = v2[i][k];
-        // }
-        // for (int j = k; j < M-k; j++) { // ->
-        //     v[N-k-1][j] = v2[N-k-1][j];
-        // }
-        // for (int i = k; i < N-k; i++) {
-        //     v[i][M-k-1] = v2[i][M-k-1];
-        // }
+        /*
+        std::copy(v2.begin(), v2.end(), v.begin());
+        copyArr(v2, v);
+        --- //
+        for (int j = k; j < M-k; j++) { // <-
+            v[k][j] = v2[k][j];
+        }
+        for (int i = k; i < N-k; i++) {
+            v[i][k] = v2[i][k];
+        }
+        for (int j = k; j < M-k; j++) { // ->
+            v[N-k-1][j] = v2[N-k-1][j];
+        }
+        for (int i = k; i < N-k; i++) {
+            v[i][M-k-1] = v2[i][M-k-1];
+        }
+        */
     }
 }
 
@@ -95,13 +99,15 @@ int main(int argc, char* argv[]) {
             v[i][j] = temp;
         }
     }
-    // for (int l = 0; l < R; l++) {
-    //     for (int k = 0; k < std::min(N, M)/2; k++) {
-    //         rotate(k);
-    //     }
-    //     std::copy(v2.begin(), v2.end(), v.begin());
-    //     std::fill(v2.begin(), v2.end(), std::vector<int>(M));
-    // }
+    /*
+    for (int l = 0; l < R; l++) {
+        for (int k = 0; k < std::min(N, M)/2; k++) {
+            rotate(k);
+        }
+        std::copy(v2.begin(), v2.end(), v.begin());
+        std::fill(v2.begin(), v2.end(), std::vector<int>(M));
+    }
+    */
     int len;
     for (int i = 0; i < std::min(N, M)/2; i++) {
         len = R % (2*(N-(2*i))+2*(M-(2*i))-4);

@@ -71,20 +71,22 @@ void DFS(int n) {
 }
 */
 
-// void DFS(int start, int depth) {
-//     if (depth == 5) {
-//         find = true;
-//         return;
-//     } else {
-//         visited[start] = true;
-//         for (int i = 0; i < v[start].size(); i++) {
-//             if (visited[v[start][i]] == true) continue;
-//             DFS(v[start][i], depth + 1);
-//             if (find == true) return;
-//         }
-//         visited[start] = false;
-//     }
-// }
+/*
+void DFS(int start, int depth) {
+    if (depth == 5) {
+        find = true;
+        return;
+    } else {
+        visited[start] = true;
+        for (int i = 0; i < v[start].size(); i++) {
+            if (visited[v[start][i]] == true) continue;
+            DFS(v[start][i], depth + 1);
+            if (find == true) return;
+        }
+        visited[start] = false;
+    }
+}
+*/
  
 void DFS(int n, int start) {
     // 이미 찾았으면 더 탐색할 필요 X
