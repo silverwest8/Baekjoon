@@ -1,5 +1,19 @@
 #include <iostream>
 
+/*
+int GCF(int n, int m) { // greatest common factor
+    int result, small;
+    small = n;
+    if (m<n) small = m;
+    for (int i = 1; i <= small; i++) {
+        if (n%i == 0 && m%i == 0) {
+            result = i;
+        }
+    }
+    return result;
+}
+*/
+
 int GCF(int n, int m) { // greatest common factor
     int result, a;
     if (n>m) {
@@ -21,18 +35,6 @@ int GCF(int n, int m) { // greatest common factor
     }
     return result;
 }
-
-// int GCF(int n, int m) { // greatest common factor
-//     int result, small;
-//     small = n;
-//     if (m<n) small = m;
-//     for (int i = 1; i <= small; i++) {
-//         if (n%i == 0 && m%i == 0) {
-//             result = i;
-//         }
-//     }
-//     return result;
-// }
 
 int LCM(int n, int m) { // least common multiple
     int result, gcn;
