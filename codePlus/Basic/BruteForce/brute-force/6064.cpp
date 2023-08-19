@@ -1,4 +1,4 @@
-// 2023 8 28 15:00 - 19:02
+// 2023.8.18 15:00 - 19:02
 #include <iostream>
 
 int main(int argc, char* argv[]) {

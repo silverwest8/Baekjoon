@@ -1,4 +1,4 @@
-// 2023. 8. 18. 20:20 - 21:39
+// 2023.8.18. 20:20 - 21:39
 #include <iostream>
 #include <vector>
 #define MAX 100000

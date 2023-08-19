@@ -1,4 +1,4 @@
-// 2023.8.8 18:14 ... 23:38
+// 2023.8.8. 18:14 - 23:38
 #include <iostream>
 #include <vector>
 #include <algorithm>

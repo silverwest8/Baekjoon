@@ -2,15 +2,17 @@
 
 // 다시보기
 
-// int 범위를 넘는 stoi -> stoll but 여기선 안쓰임(범위가 long long 넘어감)
-// std::string make_one(int n) {
-//     std::string result = "", one = "1";
-//     for (int i = 0; i < n; i++) {
-//         // 문자열 string 붙이기
-//         result.append(one);
-//     }
-//     return result;
-// }
+/*
+int 범위를 넘는 stoi -> stoll but 여기선 안쓰임(범위가 long long 넘어감)
+std::string make_one(int n) {
+    std::string result = "", one = "1";
+    for (int i = 0; i < n; i++) {
+        // 문자열 string 붙이기
+        result.append(one);
+    }
+    return result;
+}
+*/
 
 
 // 참고할 모듈러 연산 공식(나머지 연산)

@@ -1,8 +1,8 @@
+// 2023.7.26. 14:00 -
 #include <iostream>
 
 using namespace std;
 
-// 2023.7.26 14:00 ~
 
 int main(int argc, const char** argv) {
     std::cout << "Hello\n" << std::endl;

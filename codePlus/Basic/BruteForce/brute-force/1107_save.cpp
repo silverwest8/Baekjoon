@@ -1,4 +1,3 @@
-// 2023. 8. 17 11:43 -
 #include <iostream>
 #include <vector>
 #include <string>
@@ -273,8 +272,6 @@ int main(int argc, char* argv[]) {
 }
 
 /*
-
-// 2023. 8. 17 11:43 -
 #include <iostream>
 #include <vector>
 #include <string>

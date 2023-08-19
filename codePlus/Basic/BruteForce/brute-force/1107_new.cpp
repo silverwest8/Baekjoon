@@ -1,4 +1,3 @@
-// 2023. 8. 17 11:43 - 2023. 8. 18. 3:40
 #include <iostream>
 #include <vector>
 #include <string>

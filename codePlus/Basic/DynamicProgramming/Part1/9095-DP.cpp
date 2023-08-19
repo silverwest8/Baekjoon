@@ -1,4 +1,3 @@
-// 11:37 - 12:18 DFS로 풂
 // 다른 방법 - DP, 1,2,3만 이용하는거니까 규칙 찾아서 점화식 도출 가능(f(n) = f(n-1) + f(n-2) + f(n-3))
 #include <iostream>
 #include <numeric>
