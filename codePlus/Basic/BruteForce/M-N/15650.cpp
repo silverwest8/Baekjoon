@@ -1,3 +1,6 @@
+// https://www.acmicpc.net/problem/15650
+// 중복없이 1-N중에서 M개, 오름차순
+
 #include <iostream>
 #define max 8
 

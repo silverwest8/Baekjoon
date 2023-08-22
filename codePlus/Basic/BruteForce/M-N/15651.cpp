@@ -1,3 +1,6 @@
+// https://www.acmicpc.net/problem/15651
+// 중복가능, 1-N중에서 M개
+
 #include <iostream>
 #define max 8
 
