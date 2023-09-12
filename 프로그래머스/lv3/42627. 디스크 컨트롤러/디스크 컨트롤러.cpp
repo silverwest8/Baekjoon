@@ -22,14 +22,6 @@ int solution(vector<vector<int>> jobs) {
     
     pq.push(jobs[0]);
     jobs.erase(jobs.begin());
-    // while(!jobs.empty()) {
-    //     if (jobs[0][0] == pq.top()[0]) {
-    //         pq.push(jobs[0]);
-    //         jobs.erase(jobs.begin());
-    //     } else {
-    //         break;
-    //     }
-    // }
     
     while(!pq.empty() || !jobs.empty()) {
         if (pq.empty()) {
@@ -49,12 +41,10 @@ int solution(vector<vector<int>> jobs) {
         now = end;
         
         answer += (end-temp[0]);
-        // std::cout << "## "<< end-temp[0] << " " << now << " " << answer << "\n";
 
         while(!jobs.empty()) {
             if (jobs[0][0] <= now) {
                 pq.push(jobs[0]);
-                // std::cout << "*" <<jobs[0][0] << " " << jobs[0][1] << "\n";
                 jobs.erase(jobs.begin());
             } else {
                 break;
