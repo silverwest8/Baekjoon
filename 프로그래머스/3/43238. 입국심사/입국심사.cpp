@@ -10,21 +10,18 @@ long long solution(int n, vector<int> times) {
 
     long long left = (long long)times[0];
     long long right = (long long)times[times.size() -1] * n;
-
-    while(left <= right){
-        long long mid = (left + right) / 2;
-
-        long long cnt = 0; //mid 시간동안 심사 받을 수  있는 사람의 수
-        for(unsigned int i=0; i<times.size(); i++){
-            //각 심사대에서 mid 시간동안 심사 받을 수 있는 사람의 수 누적하기
-            cnt += mid / times[i]; 
+    
+    while(left <= right) {
+        long long mid = (left+right)/2;
+        long long count = 0;
+        for (int i = 0; i < times.size(); i++) {
+            count += mid/times[i];
         }
-
-        if(cnt < n){ //심사받아야 하는 사람이 남은 경우
-            left = mid + 1;
-        } else{ //n명이상 심사받은 경우
+        if (count >= n) {
             answer = mid;
-            right = mid - 1;
+            right = mid-1;
+        } else {
+            left = mid+1;
         }
     }
     return answer;
