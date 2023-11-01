@@ -35,24 +35,19 @@ std::vector<int> solution(std::vector<std::string> genres, std::vector<int> play
     std::sort(v.begin(), v.end(), compare);
     
     for (int i = 0; i < v.size(); i++) {
-        // std::cout << v[i].first << " " << v[i].second << "\n";
         std::vector<std::pair<int, int>> temp;
         for (int j = 0; j < genres.size(); j++) {
-            // std::cout << plays[j] << " " << j << "\n";
             if (v[i].first == genres[j]) {
                 temp.emplace_back(std::make_pair(plays[j], j));
             }
         }
         std::sort(temp.begin(), temp.end(), compare2);
         for (int k = 0; k < temp.size(); k++) {
-            // std::cout << temp[k].first << " " << temp[k].second << "!\n";
             if (k < 2) {
                 answer.emplace_back(temp[k].second);
             }
-        }
-        
+        }   
     }
-    
     
     return answer;
 }
