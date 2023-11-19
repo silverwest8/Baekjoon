@@ -8,7 +8,7 @@ std::string solution(std::string number, int k) {
     for(int i = 0; i < n; i++) {
         char max = number[start];
         int maxIdx = start;
-        for(int j = start; j <= i+k; j++) {
+        for(int j = start; j < i+k+1; j++) {
             if(max < number[j]) {
                 max = number[j];
                 maxIdx = j;
