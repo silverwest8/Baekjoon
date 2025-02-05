@@ -1,10 +1,10 @@
 # [level 2] 주식가격 - 42584 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42584) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42584?language=java) 
 
 ### 성능 요약
 
-메모리: 16.2 MB, 시간: 15.56 ms
+메모리: 73.4 MB, 시간: 19.02 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 11월 6일 18:39:57
+2025년 02월 06일 01:31:21
 
 ### 문제 설명
 
