@@ -1,2 +1,3 @@
 def solution(n):
-    return [int(i) for i in str(n)[::-1]]
+    answer = [int(x) for x in reversed(str(n))]
+    return answer
